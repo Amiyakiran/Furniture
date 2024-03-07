@@ -2,22 +2,31 @@
     margin: 0px;
     padding: 0px; 
     
+    
 }
 body{
     overflow-x: hidden;
+    /* box-sizing: border-box; */
 }
-.body{
+.MAIN{
     background-image: url('./images/table1.png');
     background-position: center;
     background-size: cover;
-    height: 120vh;
-    background-attachment: fixed;
-   
+    /* height: 120vh; */
+    background-attachment: fixed;   
 
+}
+@media (max-width:600px){
+    .icon{
+        display: none;
+    }
+    .MAIN{
+        background-position: bottom;
+    }
 }
 
 #logo{
-    width: 300px;
+    width: 100%;
     height: 100px;
 }
 #contactId{
@@ -40,8 +49,8 @@ li i:hover{
 }
 
 .welcome{
-    padding-top: 400px;
-    padding-left: 50px;
+    padding-top: 21%;
+    padding-left: 5%;
    
 
 }
@@ -57,6 +66,15 @@ li i:hover{
     font-weight: 1000px;
     font-family: "Roboto Slab", serif;
     
+}
+@media (max-width:600px){
+    .welcome h1{
+        color: white;
+        font-size: 50px;
+        font-weight: 1000px;
+        font-family: "Roboto Slab", serif;
+        
+    }  
 }
 
 
@@ -90,4 +108,49 @@ li i:hover{
 }
 p{
     text-align: justify;
+}
+ #imag1{
+position: relative;
+} 
+
+.rosewood{
+    height: 20%;
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.909);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    
+}
+.rosewood1{
+    height: 10%;
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.909);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+@media(min-width:600px){
+    #texti{
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    
+}
+@media(max-width:600px){
+    #texti{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .rosewood1{
+        height: 20%;
+    }
 }
